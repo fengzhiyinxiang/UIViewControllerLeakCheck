@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B02E48DF2174F23000CAF3CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E48DE2174F23000CAF3CD /* AppDelegate.m */; };
+		B02E48E22174F23000CAF3CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E48E12174F23000CAF3CD /* ViewController.m */; };
+		B02E48E82174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B02E48E62174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodeld */; };
+		B02E48EA2174F23200CAF3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02E48E92174F23200CAF3CD /* Assets.xcassets */; };
+		B02E48ED2174F23200CAF3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02E48EB2174F23200CAF3CD /* LaunchScreen.storyboard */; };
+		B02E48F02174F23200CAF3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E48EF2174F23200CAF3CD /* main.m */; };
+		B02E48FA2174F23200CAF3CD /* UIViewControllerLeakCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E48F92174F23200CAF3CD /* UIViewControllerLeakCheckTests.m */; };
+		B02E49052174F23200CAF3CD /* UIViewControllerLeakCheckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49042174F23200CAF3CD /* UIViewControllerLeakCheckUITests.m */; };
+		B02E49142174F28300CAF3CD /* BadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49132174F28300CAF3CD /* BadVC.m */; };
+		B02E49152174F28300CAF3CD /* BadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49132174F28300CAF3CD /* BadVC.m */; };
+		B02E49162174F28300CAF3CD /* BadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49132174F28300CAF3CD /* BadVC.m */; };
+		B02E49312174FBF700CAF3CD /* GoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49302174FBF700CAF3CD /* GoodVC.m */; };
+		B02E49322174FBF700CAF3CD /* GoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49302174FBF700CAF3CD /* GoodVC.m */; };
+		B02E49332174FBF700CAF3CD /* GoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B02E49302174FBF700CAF3CD /* GoodVC.m */; };
+		B0F1F28A217582D400DBF98F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0F1F287217582D400DBF98F /* LICENSE */; };
+		B0F1F28B217582D400DBF98F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B0F1F288217582D400DBF98F /* README.md */; };
+		B0F1F28C217582D400DBF98F /* UIViewController+LeakCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1F289217582D400DBF98F /* UIViewController+LeakCheck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B02E48F62174F23200CAF3CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02E48D22174F23000CAF3CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02E48D92174F23000CAF3CD;
+			remoteInfo = UIViewControllerLeakCheck;
+		};
+		B02E49012174F23200CAF3CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02E48D22174F23000CAF3CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02E48D92174F23000CAF3CD;
+			remoteInfo = UIViewControllerLeakCheck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B02E48DA2174F23000CAF3CD /* UIViewControllerLeakCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewControllerLeakCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02E48DD2174F23000CAF3CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B02E48DE2174F23000CAF3CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B02E48E02174F23000CAF3CD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B02E48E12174F23000CAF3CD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B02E48E72174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UIViewControllerLeakCheck.xcdatamodel; sourceTree = "<group>"; };
+		B02E48E92174F23200CAF3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B02E48EC2174F23200CAF3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B02E48EE2174F23200CAF3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02E48EF2174F23200CAF3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B02E48F52174F23200CAF3CD /* UIViewControllerLeakCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewControllerLeakCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02E48F92174F23200CAF3CD /* UIViewControllerLeakCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerLeakCheckTests.m; sourceTree = "<group>"; };
+		B02E48FB2174F23200CAF3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02E49002174F23200CAF3CD /* UIViewControllerLeakCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewControllerLeakCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02E49042174F23200CAF3CD /* UIViewControllerLeakCheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerLeakCheckUITests.m; sourceTree = "<group>"; };
+		B02E49062174F23200CAF3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02E49122174F28300CAF3CD /* BadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BadVC.h; sourceTree = "<group>"; };
+		B02E49132174F28300CAF3CD /* BadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadVC.m; sourceTree = "<group>"; };
+		B02E492F2174FBF700CAF3CD /* GoodVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodVC.h; sourceTree = "<group>"; };
+		B02E49302174FBF700CAF3CD /* GoodVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodVC.m; sourceTree = "<group>"; };
+		B0F1F286217582D400DBF98F /* UIViewController+LeakCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeakCheck.h"; sourceTree = "<group>"; };
+		B0F1F287217582D400DBF98F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B0F1F288217582D400DBF98F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0F1F289217582D400DBF98F /* UIViewController+LeakCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LeakCheck.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B02E48D72174F23000CAF3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48F22174F23200CAF3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48FD2174F23200CAF3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B02E48D12174F23000CAF3CD = {
+			isa = PBXGroup;
+			children = (
+				B02E48DC2174F23000CAF3CD /* UIViewControllerLeakCheck */,
+				B02E48F82174F23200CAF3CD /* UIViewControllerLeakCheckTests */,
+				B02E49032174F23200CAF3CD /* UIViewControllerLeakCheckUITests */,
+				B02E48DB2174F23000CAF3CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B02E48DB2174F23000CAF3CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B02E48DA2174F23000CAF3CD /* UIViewControllerLeakCheck.app */,
+				B02E48F52174F23200CAF3CD /* UIViewControllerLeakCheckTests.xctest */,
+				B02E49002174F23200CAF3CD /* UIViewControllerLeakCheckUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B02E48DC2174F23000CAF3CD /* UIViewControllerLeakCheck */ = {
+			isa = PBXGroup;
+			children = (
+				B0F1F285217582D400DBF98F /* UIViewControllerLeakCheck */,
+				B02E48DD2174F23000CAF3CD /* AppDelegate.h */,
+				B02E48DE2174F23000CAF3CD /* AppDelegate.m */,
+				B02E48E02174F23000CAF3CD /* ViewController.h */,
+				B02E48E12174F23000CAF3CD /* ViewController.m */,
+				B02E492F2174FBF700CAF3CD /* GoodVC.h */,
+				B02E49302174FBF700CAF3CD /* GoodVC.m */,
+				B02E49122174F28300CAF3CD /* BadVC.h */,
+				B02E49132174F28300CAF3CD /* BadVC.m */,
+				B02E48E92174F23200CAF3CD /* Assets.xcassets */,
+				B02E48EB2174F23200CAF3CD /* LaunchScreen.storyboard */,
+				B02E48EE2174F23200CAF3CD /* Info.plist */,
+				B02E48EF2174F23200CAF3CD /* main.m */,
+				B02E48E62174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodeld */,
+			);
+			path = UIViewControllerLeakCheck;
+			sourceTree = "<group>";
+		};
+		B02E48F82174F23200CAF3CD /* UIViewControllerLeakCheckTests */ = {
+			isa = PBXGroup;
+			children = (
+				B02E48F92174F23200CAF3CD /* UIViewControllerLeakCheckTests.m */,
+				B02E48FB2174F23200CAF3CD /* Info.plist */,
+			);
+			path = UIViewControllerLeakCheckTests;
+			sourceTree = "<group>";
+		};
+		B02E49032174F23200CAF3CD /* UIViewControllerLeakCheckUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B02E49042174F23200CAF3CD /* UIViewControllerLeakCheckUITests.m */,
+				B02E49062174F23200CAF3CD /* Info.plist */,
+			);
+			path = UIViewControllerLeakCheckUITests;
+			sourceTree = "<group>";
+		};
+		B0F1F285217582D400DBF98F /* UIViewControllerLeakCheck */ = {
+			isa = PBXGroup;
+			children = (
+				B0F1F286217582D400DBF98F /* UIViewController+LeakCheck.h */,
+				B0F1F287217582D400DBF98F /* LICENSE */,
+				B0F1F288217582D400DBF98F /* README.md */,
+				B0F1F289217582D400DBF98F /* UIViewController+LeakCheck.m */,
+			);
+			path = UIViewControllerLeakCheck;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B02E48D92174F23000CAF3CD /* UIViewControllerLeakCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02E49092174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheck" */;
+			buildPhases = (
+				B02E48D62174F23000CAF3CD /* Sources */,
+				B02E48D72174F23000CAF3CD /* Frameworks */,
+				B02E48D82174F23000CAF3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIViewControllerLeakCheck;
+			productName = UIViewControllerLeakCheck;
+			productReference = B02E48DA2174F23000CAF3CD /* UIViewControllerLeakCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B02E48F42174F23200CAF3CD /* UIViewControllerLeakCheckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02E490C2174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheckTests" */;
+			buildPhases = (
+				B02E48F12174F23200CAF3CD /* Sources */,
+				B02E48F22174F23200CAF3CD /* Frameworks */,
+				B02E48F32174F23200CAF3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B02E48F72174F23200CAF3CD /* PBXTargetDependency */,
+			);
+			name = UIViewControllerLeakCheckTests;
+			productName = UIViewControllerLeakCheckTests;
+			productReference = B02E48F52174F23200CAF3CD /* UIViewControllerLeakCheckTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B02E48FF2174F23200CAF3CD /* UIViewControllerLeakCheckUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B02E490F2174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheckUITests" */;
+			buildPhases = (
+				B02E48FC2174F23200CAF3CD /* Sources */,
+				B02E48FD2174F23200CAF3CD /* Frameworks */,
+				B02E48FE2174F23200CAF3CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B02E49022174F23200CAF3CD /* PBXTargetDependency */,
+			);
+			name = UIViewControllerLeakCheckUITests;
+			productName = UIViewControllerLeakCheckUITests;
+			productReference = B02E49002174F23200CAF3CD /* UIViewControllerLeakCheckUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B02E48D22174F23000CAF3CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = QF;
+				TargetAttributes = {
+					B02E48D92174F23000CAF3CD = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					B02E48F42174F23200CAF3CD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B02E48D92174F23000CAF3CD;
+					};
+					B02E48FF2174F23200CAF3CD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = B02E48D92174F23000CAF3CD;
+					};
+				};
+			};
+			buildConfigurationList = B02E48D52174F23000CAF3CD /* Build configuration list for PBXProject "UIViewControllerLeakCheck" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B02E48D12174F23000CAF3CD;
+			productRefGroup = B02E48DB2174F23000CAF3CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B02E48D92174F23000CAF3CD /* UIViewControllerLeakCheck */,
+				B02E48F42174F23200CAF3CD /* UIViewControllerLeakCheckTests */,
+				B02E48FF2174F23200CAF3CD /* UIViewControllerLeakCheckUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B02E48D82174F23000CAF3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0F1F28A217582D400DBF98F /* LICENSE in Resources */,
+				B02E48ED2174F23200CAF3CD /* LaunchScreen.storyboard in Resources */,
+				B0F1F28B217582D400DBF98F /* README.md in Resources */,
+				B02E48EA2174F23200CAF3CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48F32174F23200CAF3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48FE2174F23200CAF3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B02E48D62174F23000CAF3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02E48E22174F23000CAF3CD /* ViewController.m in Sources */,
+				B0F1F28C217582D400DBF98F /* UIViewController+LeakCheck.m in Sources */,
+				B02E49312174FBF700CAF3CD /* GoodVC.m in Sources */,
+				B02E48DF2174F23000CAF3CD /* AppDelegate.m in Sources */,
+				B02E48F02174F23200CAF3CD /* main.m in Sources */,
+				B02E49142174F28300CAF3CD /* BadVC.m in Sources */,
+				B02E48E82174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48F12174F23200CAF3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02E48FA2174F23200CAF3CD /* UIViewControllerLeakCheckTests.m in Sources */,
+				B02E49322174FBF700CAF3CD /* GoodVC.m in Sources */,
+				B02E49152174F28300CAF3CD /* BadVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B02E48FC2174F23200CAF3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02E49052174F23200CAF3CD /* UIViewControllerLeakCheckUITests.m in Sources */,
+				B02E49332174FBF700CAF3CD /* GoodVC.m in Sources */,
+				B02E49162174F28300CAF3CD /* BadVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B02E48F72174F23200CAF3CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02E48D92174F23000CAF3CD /* UIViewControllerLeakCheck */;
+			targetProxy = B02E48F62174F23200CAF3CD /* PBXContainerItemProxy */;
+		};
+		B02E49022174F23200CAF3CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B02E48D92174F23000CAF3CD /* UIViewControllerLeakCheck */;
+			targetProxy = B02E49012174F23200CAF3CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B02E48EB2174F23200CAF3CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B02E48EC2174F23200CAF3CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B02E49072174F23200CAF3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B02E49082174F23200CAF3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B02E490A2174F23200CAF3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B02E490B2174F23200CAF3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheck/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B02E490D2174F23200CAF3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewControllerLeakCheck.app/UIViewControllerLeakCheck";
+			};
+			name = Debug;
+		};
+		B02E490E2174F23200CAF3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheckTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheckTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewControllerLeakCheck.app/UIViewControllerLeakCheck";
+			};
+			name = Release;
+		};
+		B02E49102174F23200CAF3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIViewControllerLeakCheck;
+			};
+			name = Debug;
+		};
+		B02E49112174F23200CAF3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P66MGEJG4R;
+				INFOPLIST_FILE = UIViewControllerLeakCheckUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.junzheng.UIViewControllerLeakCheckUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UIViewControllerLeakCheck;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B02E48D52174F23000CAF3CD /* Build configuration list for PBXProject "UIViewControllerLeakCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02E49072174F23200CAF3CD /* Debug */,
+				B02E49082174F23200CAF3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02E49092174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02E490A2174F23200CAF3CD /* Debug */,
+				B02E490B2174F23200CAF3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02E490C2174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02E490D2174F23200CAF3CD /* Debug */,
+				B02E490E2174F23200CAF3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02E490F2174F23200CAF3CD /* Build configuration list for PBXNativeTarget "UIViewControllerLeakCheckUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B02E49102174F23200CAF3CD /* Debug */,
+				B02E49112174F23200CAF3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B02E48E62174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B02E48E72174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodel */,
+			);
+			currentVersion = B02E48E72174F23000CAF3CD /* UIViewControllerLeakCheck.xcdatamodel */;
+			path = UIViewControllerLeakCheck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B02E48D22174F23000CAF3CD /* Project object */;
+}

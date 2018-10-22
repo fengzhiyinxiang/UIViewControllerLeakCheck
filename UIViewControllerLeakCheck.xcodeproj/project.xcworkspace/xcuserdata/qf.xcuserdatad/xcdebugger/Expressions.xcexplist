@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[UIViewController(Load) my_viewDidAppear:]:UIViewController+Load.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[UIViewController(Load) my_viewWillDisappear:]:UIViewController+Load.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[UIViewController(Load) my_viewDidDisappear:]:UIViewController+Load.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
