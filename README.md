@@ -1,0 +1,2 @@
+# UIViewControllerLeakCheck
+控制台自动打印泄露的UIViewController
